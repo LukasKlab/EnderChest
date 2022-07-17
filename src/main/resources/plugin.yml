@@ -1,0 +1,8 @@
+name: EnderChest
+version: '${version}'
+main: net.labindustries.enderchest.EnderChest
+api-version: 1.19
+authors: [ Lukas02 ]
+description: Opens a Enderchest GUI by command
+commands:
+  enderchest:
