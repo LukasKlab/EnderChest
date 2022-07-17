@@ -2,6 +2,7 @@ package net.labindustries.enderchest.commands;
 
 import net.labindustries.enderchest.EnderChest;
 import org.bukkit.Location;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -23,6 +24,7 @@ public class EnderChestCommand implements CommandExecutor {
         if (sender instanceof Player player){
             Location location = player.getLocation();
             player.openInventory(player.getEnderChest());
+            player.playSound(location, Sound.BLOCK_ENDER_CHEST_OPEN, 2, 1);
 
 
         }
