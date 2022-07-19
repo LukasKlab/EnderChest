@@ -24,7 +24,8 @@ public class EnderChestCommand implements CommandExecutor {
         if (sender instanceof Player player){
             Location location = player.getLocation();
             player.openInventory(player.getEnderChest());
-            player.playSound(location, Sound.BLOCK_ENDER_CHEST_OPEN, 2, 1);
+            player.playSound(location, Sound.BLOCK_ENDER_CHEST_OPEN, 1, 1);
+
 
 
         }
